@@ -22,6 +22,9 @@ describe('Login page tests', () => {
             fixture: 'users.json'
         })
 
+        cy.get('[name=password]').should('be.visible')
+        cy.percySnapshot()
+
         // when
         cy.get('[name=username]').type(user.username)
         cy.get('[name=password]').type(user.password)

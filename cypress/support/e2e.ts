@@ -1,4 +1,5 @@
-import './commands'
+import './commands';
+import '@percy/cypress';
 
 beforeEach(() => {
     cy.log('This will run before each test')
