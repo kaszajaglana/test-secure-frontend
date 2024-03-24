@@ -23,7 +23,7 @@ describe('Login page tests', () => {
         })
 
         cy.get('[name=password]').should('be.visible')
-        cy.percySnapshot()
+        cy.percySnapshot('Login page', { widths: [1280] })
 
         // when
         cy.get('[name=username]').type(user.username)
